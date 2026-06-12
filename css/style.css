@@ -322,9 +322,9 @@ a { color: var(--navy-soft); }
   gap: 0.8rem;
 }
 .client-list img {
-  height: 60px;
+  height: 30px;
   width: auto;
-  max-width: 150px;
+  max-width: 75px;
   object-fit: contain;
   filter: grayscale(1);
   opacity: 0.65;
