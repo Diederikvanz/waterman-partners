@@ -330,6 +330,27 @@ a { color: var(--navy-soft); }
   opacity: 0.65;
 }
 
+/* ===== Publiek & privaat domein ===== */
+.domain-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  margin-top: 2rem;
+}
+.domain-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 4px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 2.2rem 2rem;
+}
+.domain-card .card-icon { color: var(--gold-dark); margin-bottom: 1rem; }
+.domain-card h3 { font-size: 1.45rem; }
+.domain-card p { margin: 0; color: var(--ink); }
+@media (max-width: 720px) {
+  .domain-cards { grid-template-columns: 1fr; }
+}
+
 /* ===== Aanbevelingen / quote-kaarten ===== */
 .quote-grid {
   display: grid;
