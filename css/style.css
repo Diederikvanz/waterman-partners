@@ -386,6 +386,16 @@ a { color: var(--navy-soft); }
   padding-top: 0.85rem;
 }
 .quote-card figcaption strong { color: var(--navy); }
+.quote-logo {
+  display: block;
+  height: 26px;
+  width: auto;
+  max-width: 110px;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  filter: grayscale(100%);
+  opacity: 0.6;
+}
 
 /* ===== Hero compact (subpagina's) ===== */
 .hero-compact { padding: clamp(3rem, 7vw, 5rem) 0 clamp(4.5rem, 9vw, 7rem); }
