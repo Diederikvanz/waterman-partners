@@ -37,6 +37,22 @@
   var jaar = document.getElementById('jaar');
   if (jaar) jaar.textContent = String(new Date().getFullYear());
 
+  // --- Contactformulier via mailto ---
+  var form = document.querySelector('.contact-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var naam = document.getElementById('naam').value;
+      var email = document.getElementById('email').value;
+      var onderwerp = document.getElementById('onderwerp').value || 'Bericht via website';
+      var bericht = document.getElementById('bericht').value;
+      var body = 'Naam: ' + naam + '\nE-mail: ' + email + '\n\n' + bericht;
+      window.location.href = 'mailto:info@watermanpartners.nl'
+        + '?subject=' + encodeURIComponent(onderwerp)
+        + '&body=' + encodeURIComponent(body);
+    });
+  }
+
   // --- Scroll-animaties (respecteert prefers-reduced-motion via CSS) ---
   var reveals = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window && reveals.length) {
