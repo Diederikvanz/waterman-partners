@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /algemene_voorwaarden_wp.pdf
 
 Sitemap: https://www.watermanpartners.nl/sitemap.xml
