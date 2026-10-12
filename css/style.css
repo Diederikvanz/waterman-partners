@@ -273,6 +273,7 @@ a { color: var(--navy-soft); }
   padding: 1.25rem 1.25rem 0.5rem;
   border-radius: 0 var(--radius) var(--radius) 0;
 }
+.values li:last-child:nth-child(odd) { grid-column: 1 / -1; }
 .values h3 { font-size: 1.05rem; margin-bottom: 0.35rem; }
 .values p { color: var(--muted); font-size: 0.95rem; }
 
